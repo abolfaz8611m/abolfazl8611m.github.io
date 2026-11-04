@@ -4,62 +4,156 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#12345b">
 <title>ابوالفضل محمدی | کارت دیجیتال</title>
+
 <style>
 *{box-sizing:border-box}
 body{
- margin:0;min-height:100vh;padding:25px;
+ margin:0;min-height:100vh;padding:25px 15px;
  display:flex;align-items:center;justify-content:center;
- background:#f1f4f8;color:#1c293b;
- font-family:Tahoma,Arial,sans-serif
+ background:linear-gradient(145deg,#f5f8fc,#e8eef6);
+ font-family:Tahoma,Arial,sans-serif;color:#172b45;
 }
 .card{
- width:100%;max-width:420px;background:white;
- padding:32px 24px;border-radius:22px;
- text-align:center;box-shadow:0 12px 40px #243b5515
+ width:100%;max-width:440px;background:white;
+ border:1px solid #e3eaf2;border-radius:25px;
+ padding:30px 24px 24px;position:relative;
+ overflow:hidden;
+ box-shadow:0 18px 50px rgba(18,52,91,.10);
+}
+.top-line{
+ position:absolute;top:0;right:0;width:100%;height:7px;
+ background:linear-gradient(90deg,#9bb9d9,#12345b);
+}
+.nfc{
+ position:absolute;left:23px;top:23px;
+ color:#8195ad;font-size:11px;letter-spacing:1px;
+}
+.profile{
+ display:flex;align-items:center;gap:17px;
+ margin:20px 0 24px;
 }
 .avatar{
- width:78px;height:78px;margin:0 auto 18px;
- display:grid;place-items:center;border-radius:22px;
- background:#e8f0fc;color:#285b9d;font-size:27px;font-weight:bold
+ width:105px;height:105px;flex-shrink:0;
+ border-radius:50%;border:3px solid #dce7f3;
+ background:#eaf1fa;display:grid;place-items:center;
+ overflow:hidden;
 }
-h1{font-size:24px;margin:0 0 12px}
-.role{font-size:14px;line-height:2;color:#52647d}
-.bio{font-size:13px;line-height:2;color:#7b8798;margin:20px 0}
-a{
- display:block;text-decoration:none;padding:14px;
- margin:10px 0;border-radius:12px;
- background:#f1f5fa;color:#263b58;font-size:14px;font-weight:bold
+.avatar svg{width:94px;height:94px}
+h1{
+ font-size:22px;color:#12345b;margin:0 0 9px;
+ line-height:1.6;
 }
-a.primary{background:#285d9f;color:white}
-h2{font-size:13px;color:#77869a;margin:25px 0 14px}
-.tags{display:flex;flex-wrap:wrap;justify-content:center;gap:8px}
-.tag{background:#f1f4f8;padding:8px 12px;border-radius:20px;font-size:12px;color:#52647d}
-footer{margin-top:25px;color:#a0aaba;font-size:11px}
+.role{
+ color:#586d87;font-size:12px;
+ line-height:2.1;margin:0;
+}
+.divider{
+ height:1px;background:#e5ebf2;margin:20px 0;
+}
+.bio{
+ font-size:13px;line-height:2.1;
+ color:#748399;text-align:center;margin:0 0 20px;
+}
+.buttons{display:grid;gap:12px}
+.btn{
+ display:flex;align-items:center;justify-content:center;
+ padding:15px;border-radius:13px;
+ text-decoration:none;font-size:14px;font-weight:bold;
+ border:1px solid #dce5ef;color:#12345b;
+ background:white;
+}
+.btn.primary{background:#12345b;color:white}
+.section-title{
+ text-align:center;font-size:12px;
+ color:#8190a3;margin:25px 0 13px;
+ font-weight:bold;
+}
+.tags{
+ display:flex;flex-wrap:wrap;
+ justify-content:center;gap:8px;
+}
+.tag{
+ background:#edf3fa;color:#536b86;
+ padding:9px 12px;border-radius:20px;
+ font-size:12px;
+}
+footer{
+ text-align:center;color:#a0adbb;
+ font-size:10px;margin-top:25px;
+}
+@media(max-width:370px){
+ .profile{gap:11px}
+ .avatar{width:85px;height:85px}
+ .avatar svg{width:77px;height:77px}
+ h1{font-size:19px}
+ .role{font-size:11px}
+}
 </style>
 </head>
+
 <body>
 <main class="card">
- <div class="avatar">ا‌م</div>
- <h1>ابوالفضل محمدی</h1>
- <p class="role">
- علاقه‌مند به الکترونیک و فناوری<br>
- دانشجوی ساخت و تولید
- </p>
- <p class="bio">
- علاقه‌مند به یادگیری، طراحی و ساخت؛
- از الکترونیک و مدارها تا فناوری و ساخت‌وتولید.
- </p>
- <a class="primary" href="tel:+989134942824">☎ تماس با من</a>
- <a href="mailto:abolfazlm.8611@gmail.com">✉ ارسال ایمیل</a>
- <h2>حوزه‌های علاقه‌مندی</h2>
- <div class="tags">
-  <span class="tag">الکترونیک</span>
-  <span class="tag">طراحی مدار</span>
-  <span class="tag">ساخت و تولید</span>
-  <span class="tag">فناوری</span>
- </div>
- <footer>کارت دیجیتال شخصی</footer>
+
+<div class="top-line"></div>
+<div class="nfc">))) NFC</div>
+
+<section class="profile">
+
+<div class="avatar" aria-label="آواتار رسمی">
+<svg viewBox="0 0 120 120">
+<circle cx="60" cy="60" r="58" fill="#e8eff8"/>
+<path d="M19 111c4-23 20-35 41-35s37 12 41 35" fill="#173b64"/>
+<path d="M44 76l16 17 16-17 8 6-10 29H46L36 82z" fill="white"/>
+<path d="M54 88h12l-3 23h-6z" fill="#2d659e"/>
+<path d="M39 43c0-19 9-30 22-30 17 0 25 12 23 31l-3 23c-2 15-11 25-21 25S41 82 39 67z" fill="#f1d8c4"/>
+<path d="M37 48c-3-22 7-37 25-37 17 0 27 12 24 34l-5-8c-10 1-19-3-26-10-4 9-10 14-18 16z" fill="#173b64"/>
+</svg>
+</div>
+
+<div>
+<h1>ابوالفضل محمدی</h1>
+<p class="role">علاقه‌مند به الکترونیک و فناوری</p>
+<p class="role">دانشجوی ساخت و تولید</p>
+</div>
+
+</section>
+
+<div class="divider"></div>
+
+<p class="bio">
+علاقه‌مند به یادگیری، طراحی و ساخت؛
+از الکترونیک و مدارها تا فناوری و ساخت‌وتولید.
+</p>
+
+<div class="buttons">
+
+<a class="btn primary" href="tel:+989134942824">
+☎ تماس با من
+</a>
+
+<a class="btn" href="mailto:abolfazlm.8611@gmail.com">
+✉ ارسال ایمیل
+</a>
+
+</div>
+
+<div class="section-title">
+حوزه‌های علاقه‌مندی
+</div>
+
+<div class="tags">
+<span class="tag">الکترونیک</span>
+<span class="tag">طراحی مدار</span>
+<span class="tag">ساخت و تولید</span>
+<span class="tag">فناوری</span>
+</div>
+
+<footer>
+کارت دیجیتال شخصی · NFC
+</footer>
+
 </main>
 </body>
 </html>
